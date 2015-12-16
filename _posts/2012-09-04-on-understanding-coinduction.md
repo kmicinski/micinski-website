@@ -4,6 +4,7 @@ title:  "On Understanding Coinduction"
 date:   2012-09-04
 categories: coinduction functional-programming
 ---
+
 Here’s the basic story:
 
 > Induction is about finite data, co-induction is about infinite data.
