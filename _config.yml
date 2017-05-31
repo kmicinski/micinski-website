@@ -10,10 +10,17 @@ title: Kristopher Micinski
 email: micinski@cs.umd.edu
 description: > # this means to ignore newlines until "baseurl:"
    Kristopher Micinski's personal website: research in programming languages, security, and Android.
-baseurl: "http://cs.umd.edu/~micinski"
-url: "http://cs.umd.edu/~micinski" # the base hostname & protocol for your site
+#baseurl: "https://cs.umd.edu/~micinski"
+#url: "https://cs.umd.edu/~micinski" # the base hostname & protocol for your site
 twitter_username: krismicinski
 github_username:  kmicinski
+permalink: pretty
 
 # Build settings
-markdown: kramdown
+#markdown: redcarpet
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

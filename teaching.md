@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Teaching
+title: Courses
 ---
 
 I'm particularly interested in computer science education, and

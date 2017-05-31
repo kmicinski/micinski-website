@@ -3,11 +3,12 @@
 ---
 @charset "utf-8";
 
-
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: Arial, sans-serif;
+$base-font-size:   18px;
 $base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -28,8 +29,6 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -43,8 +42,6 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
@@ -54,9 +51,17 @@ $on-laptop:        800px;
 
 
 .krispic {
+    overflow: auto;
+    padding: 5px;
+    margin-left: 20px;
     width: 200px;
-    margin: 0px 0px 15px 20px;
     float: right;
+    margin-top: 275px;
+    box-shadow: 2px 5px 5px #aaa;
+}
+
+.krispic img {
+    display: block;
 }
 
 blockquote {
@@ -67,8 +72,100 @@ blockquote {
     padding: .5em 1em;
 }
 
+// Hack
+h1 {
+    font-size: 38px;
+}
+
 .smallright {
   float: right;
   width: 350px;
 }
-    
+
+article img {
+  margin: auto;
+  width: 80%;
+}
+
+.main p {
+  text-indent: 0px
+}
+
+article p { 
+} 
+
+ul p { 
+   text-indent: 0px;
+}
+
+@media (min-width: 768px) {
+    .bs-docs-masthead {
+        //padding: 80px 0;
+    }
+}
+
+.jumbopic {
+    height: 100px;
+}
+
+.introtext h1,h2,h3,h4 { 
+    margin-bottom: 2px;
+}
+
+.introtext ul li { 
+    display: inline
+}
+
+.introtext h1,h2,h3,h4 {
+    //text-shadow: 2px 2px 2px rgba(255,255,255,.5);
+}
+
+.areadesc {
+    vertical-align: top;
+    text-align: center;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.areadesc hr {
+    border-top: 2px solid #ccc;
+}
+
+.introtext {
+    position: absolute;
+    text-align: left;
+    bottom: 15px;
+    color: #fff;
+}
+
+.introtext a {
+    color: white;
+}
+
+.introtext a:hover {
+    color: cyan;
+}
+
+.researchareas {
+    witdh: 500px;
+}
+
+.bs-docs-header {
+    position: relative;
+    //padding: 30px 15px;
+    text-align: center;
+    background-color: black; // #212121;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1.0) 100%), // 33
+    linear-gradient(to right, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
+    linear-gradient(to left, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
+    url(http://localhost:4000/assets/img/haverfordpic.jpg);
+    background-size: 999px 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#researchareas {
+    magin: auto;
+}
