@@ -5,10 +5,11 @@
 
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
 
 // Our variables
-$base-font-family: Arial, sans-serif;
-$base-font-size:   18px;
+$base-font-family: 'Open Sans', sans-serif; //Arial
+$base-font-size:   16px;
 $base-font-weight: 300;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -49,19 +50,28 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-
 .krispic {
+    width: 200px;
+    height: 200px;
     overflow: auto;
-    padding: 5px;
-    margin-left: 20px;
     width: 200px;
     float: right;
-    margin-top: 275px;
     box-shadow: 2px 5px 5px #aaa;
 }
 
 .krispic img {
-    display: block;
+  padding: 5px 5px 5px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  display: block;
+  position: absolute;
+  width: 200px;
+}
+
+#curpic {
+    z-index: 2;
 }
 
 blockquote {
@@ -73,9 +83,9 @@ blockquote {
 }
 
 // Hack
-h1 {
-    font-size: 38px;
-}
+//h1 {
+//    font-size: 38px;
+//}
 
 .smallright {
   float: right;
@@ -89,6 +99,11 @@ article img {
 
 .main p {
   text-indent: 0px
+}
+
+.main h2 {
+  margin-top: .7em;
+  margin-bottom: .3em;
 }
 
 article p { 
@@ -127,15 +142,71 @@ ul p {
     padding-left: 20px;
 }
 
+.areadesc h2,h4 {
+    margin-top: 0px;
+
+}
+
+.areadescleft {
+    vertical-align: top;
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+}
+
 .areadesc hr {
     border-top: 2px solid #ccc;
 }
 
-.introtext {
+//p {
+//  text-indent: 1em;
+//}
+
+#topcontainer {
+    max-width: $content-width;
+    width: $content-width;
+    left: 50%;
+    position: absolute;
+    top: 0px;
+}
+
+#topcontent {
+    width: $content-width;        
     position: absolute;
     text-align: left;
-    bottom: 15px;
+    top: 340px;
     color: #fff;
+    left: -50%
+}
+
+#mainpagecontent {
+    margin-top: 6.5em;
+}
+
+#mainpgvenn {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#mainwrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $content-width;  //width
+}
+
+#mainwrapper h2 {
+    margin-top: 1em;
+    margin-bottom: .4em;
+}
+
+#mainwrapper h3 {
+    margin-top: .7em;
+    margin-bottom: .4em;
+}
+
+#topblurb {
+    margin-top: 25px;
+    color: black;
 }
 
 .introtext a {

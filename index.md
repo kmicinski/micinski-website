@@ -2,25 +2,28 @@
 layout: mainpage
 ---
 
-I'm a visiting professor in the
-[Computer Science](https://www.haverford.edu/computer-science/)
-department at [Haverford College](https://www.haverford.edu), where I
-am excited to mentor students, teach courses, and perform research.
-
 ## Research
 
 My goal is to keep users secure as they use modern systems. This is a
-challenging problem: writing secure code is hard, developers are not
-always incentivized towards security, and it is not always clear what
-security even means. For example, it is easy to write an app that
-apparently works (is functionally correct), but violates user
-expectations of security by leaking their location to an ad server
-every few hours. My [research](/research) page outlines some of the
-projects I'm currently involved in.
+challenging problem. Writing secure code is hard. Checking untrusted
+code is even harder. Developers are not always incentivized towards
+security. In some cases it is not always clear what security even
+means.
+
+For example, consider an app that shows users nearby coffee shops
+frequened by their friends. Such an app may in leak or store the
+user's location (e.g., to an ad provider) in a way they do not
+intend. Sometimes, the developer is not even aware they are violating
+the user's privacy (for example, if the developer uses an ad library
+and they are unaware it collects location data). Even if the developer
+is aware of how location is being collected, users may not assume that
+it is being stored permanently. My [research](/research) page outlines
+some of the projects I'm currently involved in to address these
+problems.
 
 To help achieve this goal, I use techniques from the following areas:
 
-<table>
+<table id="mainpgvenn">
   <tr id="areastr">
     <td width="50%">
     <svg width="350" height="300" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +55,7 @@ To help achieve this goal, I use techniques from the following areas:
            <h4 style="text-align:center">(mouse over)</h4>
       </div>
    </td>
-   <td id="secdesc" class="areadesc" style="display:none">
+   <td id="secdesc" class="areadescleft" style="display:none">
       <h3>Security</h3>
       <hr />
       <p>Security is a broad area, but unified by a common challenge:
@@ -66,7 +69,7 @@ To help achieve this goal, I use techniques from the following areas:
       href="https://en.wikipedia.org/wiki/Reverse_engineering">reverse
       engineering</a></p>
    </td>
-   <td id="pldesc" class="areadesc" style="display:none">
+   <td id="pldesc" class="areadescleft" style="display:none">
       <h3>Programming Languages</h3>
       <hr />
       <p>Reasoning about a program's security requires being able to
@@ -80,7 +83,7 @@ To help achieve this goal, I use techniques from the following areas:
       and
       <a href="https://en.wikipedia.org/wiki/Symbolic_execution">symbolic execution</a>.</p>
       </td>
-   <td id="hcidesc" class="areadesc" style="display:none">
+   <td id="hcidesc" class="areadescleft" style="display:none">
       <h3>Human-Computer Interaction</h3>
       <hr />
       <p>Theory is useful for formally arguing about what security
@@ -97,22 +100,32 @@ To help achieve this goal, I use techniques from the following areas:
 
 </table>
 
-I have a great set of collaborators, many from the
+I am lucky to have a great set of collaborators, many from the
 [PLUM lab](https://github.com/plum-umd) at the University of
 Maryland. You can find a list of my publications [here](/publications)
 (and also on my
 [Google Scholar](https://scholar.google.com/citations?user=HpJLJWUAAAAJ&hl=en)
 profile).
 
-#### Undergraduate Research
+### Undergraduate Research and Theses
 
 Note that I am particularly excited to collaborate with Haverford
-students. If you are planning to do a thesis (or simply generally
-interested in research), please drop me a line so we can discuss!
+students. As you can likely tell from this page, my research is
+generally in computer security, but related areas (or problems that
+use techniques from these areas) might also appeal to me. If you are
+planning to do a thesis (or simply generally interested in research),
+please drop me a line so we can discuss!
+
+You may be interested in browsing some of my
+[undergraduate research ideas](/undergrad-research-ideas). I also have
+a page on my
+[goals and expectations for undergraduate research](/undergrad-research-goals),
+which you might want to read.
 
 ## Teaching
 
 I am deeply passionate about teaching, and I am excited to spend much
 of my week working directly with students as we tackle computer
-science together.
+science together. In Fall 2017, I will be teaching CS 245: Principles
+of Programming Languages.
 

@@ -7,9 +7,9 @@
 
 # Site settings
 title: Kristopher Micinski
-email: micinski@cs.umd.edu
+email: kris@cs.haverford.edu
 description: > # this means to ignore newlines until "baseurl:"
-   Kristopher Micinski's personal website: research in programming languages, security, and Android.
+   Kris Micinski's personal website. Visiting Prof at Haverford CS.
 #baseurl: "https://cs.umd.edu/~micinski"
 #url: "https://cs.umd.edu/~micinski" # the base hostname & protocol for your site
 twitter_username: krismicinski

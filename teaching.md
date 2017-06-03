@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Courses
+nav: true
 ---
 
 I'm particularly interested in computer science education, and
