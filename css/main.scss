@@ -30,6 +30,8 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$baseurl: '{{ site.baseurl }}';
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -230,7 +232,7 @@ ul p {
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1.0) 100%), // 33
     linear-gradient(to right, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
     linear-gradient(to left, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
-    url(http://localhost:4000/assets/img/haverfordpic.jpg);
+    url($baseurl + "/assets/img/haverfordpic.jpg");
     background-size: 999px 400px;
     height: 400px;
     background-repeat: no-repeat;
