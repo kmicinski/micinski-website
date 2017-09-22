@@ -1,14 +1,23 @@
 ---
 layout: page
-title: Courses
+title: Teaching
 nav: true
 ---
 
-I'm particularly interested in computer science education, and
-appreciate any chances I have to increase my stengths in teaching and
-interact with students.
+# Teaching
 
-# CMSC 330, Summer 2015
+I love it! Sign up and let's have a class together!
+
+## [CMSC 245, Fall 2017](http://kmicinski.com/cmsc245)
+
+I am currently teaching CMSC 245, Principles of Programming
+Languages. The course covers programming paradigms at several
+different levels of hardware abstraction, and teaches students to both
+understand how the machine executes code and expand their foundational
+understanding of programming abstractions. The main course website is
+[here](http://kmicinski.com/cmsc245).
+
+## CMSC 330, Summer 2015
 
 {:.smallright}
 ![330 Board screenshot]({{ site.baseurl }}/assets/330board.jpg)
@@ -41,7 +50,7 @@ Relevant lecture material I particular enjoyed writing includes:
 
 - [Notes on the OCaml module system](https://github.com/kmicinski/cmsc330examples/tree/master/module-systems)
 
-# One off lectures
+## One off lectures
 
 Occasionally I get invited to give one-off lectures in various
 classes. I see this as a great opportunity to expend some energy into

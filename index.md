@@ -11,8 +11,8 @@ security. In some cases it is not always clear what security even
 means.
 
 For example, consider an app that shows users nearby coffee shops
-frequened by their friends. Such an app may in leak or store the
-user's location (e.g., to an ad provider) in a way they do not
+frequented by their friends. Such an app may leak or store the user's
+location (e.g., to an ad provider) in a way they do not
 intend. Sometimes, the developer is not even aware they are violating
 the user's privacy (for example, if the developer uses an ad library
 and they are unaware it collects location data). Even if the developer
@@ -124,8 +124,4 @@ which you might want to read.
 
 ## Teaching
 
-I am deeply passionate about teaching, and I am excited to spend much
-of my week working directly with students as we tackle computer
-science together. In Fall 2017, I will be teaching CS 245: Principles
-of Programming Languages.
-
+- Fall 2017. [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cmsc245)

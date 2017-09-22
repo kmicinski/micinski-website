@@ -172,7 +172,7 @@
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 36px;
 }
 
 .post-list {
@@ -180,7 +180,7 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit / 2;
     }
 }
 
@@ -191,10 +191,7 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
 }
-
-
 
 /**
  * Posts
@@ -210,6 +207,13 @@
 
     @include media-query($on-laptop) {
         font-size: 36px;
+    }
+}
+
+.post-link {
+    h2 {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
