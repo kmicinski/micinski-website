@@ -8,10 +8,16 @@ nav: true
 
 I love it! Sign up and let's have a class together!
 
+## [CMSC 311, Spring 2018](http://kmicinski.com/cybersecurity-course)
+
+This spring I'm teaching a new course (for Haverford) in computer
+security. We cover a broad set of attacks and defenses. Students build
+an end-to-end project, and hold each other accountable by finding
+exploits and breaking each other's projects.
+
 ## [CMSC 245, Fall 2017](http://kmicinski.com/cmsc245)
 
-I am currently teaching CMSC 245, Principles of Programming
-Languages. The course covers programming paradigms at several
+The course covers programming paradigms at several
 different levels of hardware abstraction, and teaches students to both
 understand how the machine executes code and expand their foundational
 understanding of programming abstractions. The main course website is

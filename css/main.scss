@@ -53,6 +53,7 @@ $baseurl: '{{ site.baseurl }}';
 ;
 
 .krispic {
+    margin-left: 5px;
     width: 200px;
     height: 200px;
     overflow: auto;
@@ -260,6 +261,11 @@ ul p {
 
 .tagbox {
     font-size: 11pt;
+}
+
+.post-image {
+    margin: auto;
+    display: block;
 }
 
 /* .post-preview { */

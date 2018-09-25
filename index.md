@@ -124,4 +124,5 @@ which you might want to read.
 
 ## Teaching
 
-- Fall 2017. [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cmsc245)
+- Spring 2018: [CMSC311: Computer Security](http://www.kmicinski.com/cybersecurity-course)
+- Fall 2017: [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cmsc245)

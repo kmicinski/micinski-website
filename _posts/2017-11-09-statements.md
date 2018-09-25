@@ -13,4 +13,5 @@ same way I'm feeling right now:
 
 - [My research statement (4 12-point pages)]({{ site.baseurl }}/assets/research.pdf)
 
-- My teaching statement is forthcoming.
+- [My teaching statement (2 12-point pages)]({{ site.baseurl }}/assets/teaching.pdf)
+

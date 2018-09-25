@@ -172,7 +172,7 @@
 }
 
 .page-heading {
-    font-size: 36px;
+    font-size: 20px;
 }
 
 .post-list {
@@ -180,7 +180,7 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: $spacing-unit;
     }
 }
 
@@ -191,7 +191,10 @@
 
 .post-link {
     display: block;
+    font-size: 18px;
 }
+
+
 
 /**
  * Posts
@@ -201,7 +204,7 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 36px;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -210,20 +213,22 @@
     }
 }
 
-.post-link {
-    h2 {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+.writeup-content {
+  font-size: $base-font-size*.9;
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
+    h1 {
+        font-size: 36px;
+
+        @include media-query($on-laptop) {
+            font-size: 32px;
+        }
+    }
 
     h2 {
         font-size: 32px;
-        margin-top: .7em;
-        margin-bottom: .3em;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -231,8 +236,6 @@
     }
 
     h3 {
-        margin-top: .5em;
-        margin-bottom: .2em;
         font-size: 26px;
 
         @include media-query($on-laptop) {
