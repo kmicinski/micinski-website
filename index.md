@@ -124,5 +124,7 @@ which you might want to read.
 
 ## Teaching
 
+- Fall 2018: [CMSC395: Mobile Apps for Social Change](http://kmicinski.com/mobile-apps/)
+- Fall 2018: [CMSC107: Introduction to Computer Science and Data Structures](http://kmicinski.com/cs107/)
 - Spring 2018: [CMSC311: Computer Security](http://www.kmicinski.com/cybersecurity-course)
 - Fall 2017: [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cmsc245)
