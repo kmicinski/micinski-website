@@ -18,9 +18,9 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #D44500;
 
-$grey-color:       #828282;
+$grey-color:       #ADB3B8;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -60,6 +60,8 @@ $baseurl: '{{ site.baseurl }}';
     width: 200px;
     float: right;
     box-shadow: 2px 5px 5px #aaa;
+    top: -50px;
+    position: relative;
 }
 
 .krispic img {
@@ -87,7 +89,8 @@ blockquote {
 
 .smallright {
   float: right;
-  width: 350px;
+  width: 300px;
+  padding-left: 20px;
 }
 
 article img {
@@ -187,7 +190,7 @@ ul p {
 }
 
 #mainpagecontent {
-    margin-top: 6.5em;
+    margin-top: 40px;
 }
 
 #mainpgvenn {
@@ -217,11 +220,12 @@ ul p {
 }
 
 .introtext a {
-    color: white;
+    color: $brand-color;
+
 }
 
 .introtext a:hover {
-    color: cyan;
+    color: grey;
 }
 
 .researchareas {

@@ -8,14 +8,42 @@ nav: true
 
 I love it! Sign up and let's have a class together!
 
-## [CMSC 311, Spring 2018](http://kmicinski.com/cybersecurity-course)
+### [CMSC 245, Spring 2019](http://kmicinski.com/cs245)
 
-This spring I'm teaching a new course (for Haverford) in computer
-security. We cover a broad set of attacks and defenses. Students build
-an end-to-end project, and hold each other accountable by finding
-exploits and breaking each other's projects.
+This is the second iteration of my programming languages course at
+Haverford. This iteration features an [autograding
+tool](https://github.com/kmicinski/submit) we built so that students
+can get immediate feedback on their work.
 
-## [CMSC 245, Fall 2017](http://kmicinski.com/cmsc245)
+### [CMSC 395, Fall 2018](http://kmicinski.com/mobile-apps)
+
+CS 395 is a exciting project-based course that teaches software
+engineering by pairing student groups with nonprofit groups for which
+they build apps. I was really proud of the course outcomes, and we
+were able to work with some really awesome organizations.
+
+### [CMSC 107, Fall 2018](http://kmicinski.com/cs107)
+
+{:.smallright}
+![Path finding project in CS 107]({{ site.baseurl }}/assets/path.png)
+
+Fall 2018 I taught a revamped version of the introductory course at
+Haverford. My offering was fairly unique in that I replaced all of the
+course projects with incremental assignments that had students write
+core data structures and eventually built up to the implementation a
+tile-based videogame (complete with enemy AI!). A few example projects
+are available [here](https://github.com/kmicinski/cs107-p6),
+[here](https://github.com/kmicinski/cs107-p3), and
+[here](https://github.com/kmicinski/cs107-p7).
+
+### [CMSC 311, Spring 2018](http://kmicinski.com/cybersecurity-course)
+
+Spring 2018 I taught a new course (for Haverford) in computer
+security. We covered a broad set of attacks and defenses. Students
+build an end-to-end project, and hold each other accountable by
+finding exploits and breaking each other's projects.
+
+### [CMSC 245, Fall 2017](http://kmicinski.com/cmsc245)
 
 The course covers programming paradigms at several
 different levels of hardware abstraction, and teaches students to both
@@ -23,12 +51,10 @@ understand how the machine executes code and expand their foundational
 understanding of programming abstractions. The main course website is
 [here](http://kmicinski.com/cmsc245).
 
-## CMSC 330, Summer 2015
+### [CMSC 330, Summer 2015](https://cs.umd.edu/class/summer2015/cmsc330/)
 
 {:.smallright}
 ![330 Board screenshot]({{ site.baseurl }}/assets/330board.jpg)
-
-[Course webpage](https://cs.umd.edu/class/summer2015/cmsc330/)
 
 [Link to GitHub repository with examples](https://github.com/kmicinski/cmsc330examples)
 
@@ -56,7 +82,7 @@ Relevant lecture material I particular enjoyed writing includes:
 
 - [Notes on the OCaml module system](https://github.com/kmicinski/cmsc330examples/tree/master/module-systems)
 
-## One off lectures
+### One off lectures
 
 Occasionally I get invited to give one-off lectures in various
 classes. I see this as a great opportunity to expend some energy into

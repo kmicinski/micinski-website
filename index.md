@@ -17,9 +17,9 @@ intend. Sometimes, the developer is not even aware they are violating
 the user's privacy (for example, if the developer uses an ad library
 and they are unaware it collects location data). Even if the developer
 is aware of how location is being collected, users may not assume that
-it is being stored permanently. My [research](/research) page outlines
-some of the projects I'm currently involved in to address these
-problems.
+it is being stored permanently. You can look at some of my recent
+[publications](/publications) to get an idea of the projects I'm
+currently working on to help solve these problems.
 
 To help achieve this goal, I use techniques from the following areas:
 
@@ -86,20 +86,25 @@ To help achieve this goal, I use techniques from the following areas:
    <td id="hcidesc" class="areadescleft" style="display:none">
       <h3>Systems</h3>
       <hr />
+
       <p>Theory is useful for formally arguing about what security
-      means and how to enforce it. But ultimately we want to <i>implement</i> our
-      ideas in real systems. A core focus of my work is to build systems that solve
-      challenging problems and scale their implementation to production systems.</p>
+      means and how to enforce it. But ultimately we want to
+      <i>implement</i> our ideas in real systems. A core focus of my
+      work is to scale well-engineered solutions to challenging
+      problems up to production systems.</p>
+
   </td>
   </tr>
 
 </table>
 
-I am lucky to have a great set of collaborators, many from the
-[PLUM lab](https://github.com/plum-umd) at the University of
-Maryland. You can find a list of my publications [here](/publications)
-(and also on my
-[Google Scholar](https://scholar.google.com/citations?user=HpJLJWUAAAAJ&hl=en)
+I am lucky to have a great set of collaborators, many from the [PLUM
+lab](https://github.com/plum-umd) at the University of Maryland, but
+also at the [University of Alabama](https://thomas.gilray.org/),
+[Vermont](http://david.darais.com/), and
+[Tufts](https://www.cs.tufts.edu/~jfoster/). You can find a list of my
+publications [here](/publications) (and also on my [Google
+Scholar](https://scholar.google.com/citations?user=HpJLJWUAAAAJ&hl=en)
 profile).
 
 ### Undergraduate Research and Theses
@@ -111,14 +116,12 @@ use techniques from these areas) might also appeal to me. If you are
 planning to do a thesis (or simply generally interested in research),
 please drop me a line so we can discuss!
 
-You may be interested in browsing some of my
-[undergraduate research ideas](/undergrad-research-ideas). I also have
-a page on my
-[goals and expectations for undergraduate research](/undergrad-research-goals),
-which you might want to read.
+You should also read my thoughts on [goals and expectations for
+undergraduate research](/undergrad-research-goals).
 
 ## Teaching
 
+- Spring 2019: [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cs245)
 - Fall 2018: [CMSC395: Mobile Apps for Social Change](http://kmicinski.com/mobile-apps/)
 - Fall 2018: [CMSC107: Introduction to Computer Science and Data Structures](http://kmicinski.com/cs107/)
 - Spring 2018: [CMSC311: Computer Security](http://www.kmicinski.com/cybersecurity-course)
