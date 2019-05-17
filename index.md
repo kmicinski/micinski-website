@@ -109,12 +109,11 @@ profile).
 
 ### Undergraduate Research and Theses
 
-Note that I am particularly excited to collaborate with Haverford
+Note that I am particularly excited to collaborate with Syracuse
 students. As you can likely tell from this page, my research is
-generally in computer security, but related areas (or problems that
-use techniques from these areas) might also appeal to me. If you are
-planning to do a thesis (or simply generally interested in research),
-please drop me a line so we can discuss!
+generally in programming languages, but related areas (especially
+computer security) also appeal to me. If you would like to pursue
+undergraduate research, please drop me a line so we can discuss!
 
 You should also read my thoughts on [goals and expectations for
 undergraduate research](/undergrad-research-goals).
