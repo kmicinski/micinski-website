@@ -6,7 +6,20 @@ nav: true
 
 # Teaching
 
-I love it! Sign up and let's have a class together!
+I teach a variety of courses, largely focused on programming
+languages, compilers, and security. From 
+
+### CIS 352, Spring 2020
+
+Upcoming programming languages course..
+
+### [CIS 700, Fall 2020](http://kmicinski.com/program-analysis)
+
+This is a course that focuses on the theory and practice of static
+analysis. We first cover standard formulations of programming langauge
+semantics (e.g., metacircular interpreters, big/small-step sematics)
+and continue by introducing ideas from lattice theory, abstract
+interpretation, and abstract-machine-based analysis techniques.
 
 ### [CMSC 245, Spring 2019](http://kmicinski.com/cs245)
 

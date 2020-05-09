@@ -120,6 +120,8 @@ undergraduate research](/undergrad-research-goals).
 
 ## Teaching
 
+- Spring 2020: CIS352:  Programming Languages--Theory and Practice
+- Fall 2019: [CIS700: Program Analysis](http://www.kmicinski.com/program-analysis)
 - Spring 2019: [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cs245)
 - Fall 2018: [CMSC395: Mobile Apps for Social Change](http://kmicinski.com/mobile-apps/)
 - Fall 2018: [CMSC107: Introduction to Computer Science and Data Structures](http://kmicinski.com/cs107/)

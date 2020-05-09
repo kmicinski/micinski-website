@@ -33,7 +33,7 @@
 
 // Our variables
 $base-font-family: ShermanSans, "Trebuchet MS", Tahoma, sans-serif;
-$base-font-size:   17px;
+$base-font-size:   20px;
 $base-font-weight: 100;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -268,7 +268,7 @@ ul p {
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1.0) 100%), // 33
     linear-gradient(to right, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
     linear-gradient(to left, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
-    url($baseurl + "/assets/syracusepic.jpg");
+    url($baseurl + "/assets/syracusepic.png");
     background-size: 999px 400px;
     height: 400px;
     background-repeat: no-repeat;
