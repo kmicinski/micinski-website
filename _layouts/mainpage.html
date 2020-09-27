@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="masthead">
+      <div class="bs-docs-masthead" >
+        <div class="bs-docs-header">
+        </div>
+      </div>
+      <div id="topcontainer">
+          <div id="topcontent">
+            <div class="krispic">
+              <img id="nextpic" src="{{ "/assets/krisold.jpg" | prepend: site.baseurl }}" alt="A picture of Kris" />
+              <img id="curpic" src="{{ "/assets/krisold.jpg" | prepend: site.baseurl }}" alt="A picture of Kris" />
+            </div>
+            <div class="introtext">
+              <h2>Kristopher Micinski</h2>
+              <h3>Assistant Professor</h3>
+              <h4>Syracuse University</h4>
+              <ul class="social-media-list">
+                <li>
+                  <span class="glyphicon glyphicon-pencil"></span><a href="mailto:kkmicins@syr.edu"><tt style="margin-left:4px">kkmicins@syr.edu</tt></a>
+                </li>
+                <li>
+                  <span class="fa fa-twitter"></span><a style="margin-left:4px" href="https://twitter.com/krismicinski">krismicinski</a>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-calendar"></span><a href="http://whereskris.com">whereskris.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="mainpagecontent">
+      <div id="mainwrapper">
+        <div id="topblurb">
+	  <p>
+	  I love thinking about programming, exploring ways to
+	  understand programs, developing new paradigms for writing
+	  programs, and helping students understand programs. I am
+	  an assistant professor in the
+	  <a href="http://eng-cs.syr.edu/our-departments/electrical-engineering-and-computer-science/">Electrical
+	  Engineering and Computer Science</a> department at Syracuse
+	  University. I am <b>always</b> looking for motivated
+	  undergraduate, masters, and doctoral students to work on
+	  research in programming languages (specifically static
+	  analysis) and security. Feel free to email me!
+	  </p>
+        </div>
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+    <script>
+      $(document).ready(function() {
+      var areadescs = [$("#secdesc"),$("#pldesc"),$("#hcidesc")];
+      var areas = $("#areadesc");
+      $("areastr").css("min-height",
+                 (Math.min.apply(null, areadescs.map(function(f) { return f.height(); }))));
+      var activearea = areas;
+      var activecircle = null;
+      [$("#circle1"),$("#circle2"),$("#circle3")]
+        .forEach(function(f,i) {
+            f.mouseenter(function() {
+              activearea.css({"display": "none"});
+              activearea = areadescs[i];
+              activearea.css({"display": "table-cell"});
+              if (activecircle != null) {
+                activecircle.css({"fill-opacity": .4});
+              }
+              activecircle = f;
+              activecircle.css({"fill-opacity": .7});
+          });
+/*          f.mouseleave(function() {
+            areadescs[i].css({"display": "none"});
+            areas.css({"display": "table-cell"});
+            f.css({"fill-opacity": .4});
+          });*/
+        });
+      
+      var i = 0;
+      var profpic = $("#profpic");
+      var pics = ["krisold.jpg","krisdrawing.jpg","krisbw.jpg"].map(function(x) {
+                    return "/assets/img/" + x });
+      window
+        .setInterval(function() { 
+          if (i >= pics.length - 1) {
+           i = 0;
+          } else {
+           i = i+1;
+          }
+          var pic = pics[i];
+          $('#nextpic').attr('src', pic)
+          $('#curpic').fadeOut(300, function() {
+            $(this).attr('src', $('#nextpic').attr('src')).fadeIn();
+            return;});
+      }, 5000);
+      });
+    </script>
+
+  </body>
+
+</html>

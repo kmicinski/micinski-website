@@ -3,24 +3,51 @@
 ---
 @charset "utf-8";
 
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
 
+/* Sherman Sans Book */
+/* Sherman Sans Book */
+
+@font-face {
+ font-family: "ShermanSans";
+ src: url("https://assets.syracuse.edu/fonts/shermansans-book.woff2") format("woff2"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book.woff") format("woff"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book.eot") format("embedded-opentype");
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+ unicode-range: U+0020-007F, U+00A9, U+00AE, U+2013-201D;
+}
+@font-face {
+ font-family: "ShermanSans";
+ src: url("https://assets.syracuse.edu/fonts/shermansans-book-intl.woff2") format("woff2"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book-intl.woff") format("woff"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book-intl.eot") format("embedded-opentype");
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+ unicode-range: U+00A0-00A8, U+00C0-024F, U+201E-2026;
+}
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 300;
+$base-font-family: ShermanSans, "Trebuchet MS", Tahoma, sans-serif;
+$base-font-size:   20px;
+$base-font-weight: 100;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$bigger-line-height: 1.8;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #D44500;
 
-$grey-color:       #828282;
+$grey-color:       #6F777D;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  #6F777D;
 
 // Width of the content area
 $content-width:    800px;
@@ -28,7 +55,7 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$baseurl: '{{ site.baseurl }}';
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -43,8 +70,6 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
@@ -52,23 +77,254 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-
 .krispic {
+    margin-left: 5px;
     width: 200px;
-    margin: 0px 0px 15px 20px;
+    height: 200px;
+    overflow: auto;
+    width: 200px;
     float: right;
+    box-shadow: 2px 5px 5px #aaa;
+    top: -50px;
+    position: relative;
+}
+
+.krispic img {
+  padding: 5px 5px 5px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  display: block;
+  position: absolute;
+  width: 200px;
+}
+
+#curpic {
+    z-index: 2;
 }
 
 blockquote {
     margin-top : 10px;
     margin-left : 20px;
-    background-color: #f6ebc1;
-    border-left: 5px solid #fce27c;
+    background-color: #faece5; //#f6d9cc;
+    border-left: 5px solid #edb499;
     padding: .5em 1em;
 }
 
 .smallright {
   float: right;
-  width: 350px;
+  width: 300px;
+  padding-left: 20px;
 }
-    
+
+article img {
+  margin: auto;
+  width: 80%;
+}
+
+.main p {
+  text-indent: 0px
+}
+
+.post-link h2 { 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main h2 {
+  margin-top: .7em;
+  margin-bottom: .3em;
+}
+
+article p { 
+    font-family: "Open Sans";
+} 
+
+ul p { 
+   text-indent: 0px;
+}
+
+@media (min-width: 768px) {
+    .bs-docs-masthead {
+        //padding: 80px 0;
+    }
+}
+
+.jumbopic {
+    height: 100px;
+}
+
+.introtext h1,h2,h3,h4 { 
+    margin-bottom: 10px;
+}
+
+.introtext ul li { 
+    display: inline
+}
+
+.introtext h1,h2,h3,h4 {
+    //text-shadow: 2px 2px 2px rgba(255,255,255,.5);
+}
+
+.areadesc {
+    vertical-align: top;
+    text-align: center;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.areadesc h2,h4 {
+    margin-top: 0px;
+}
+
+.areadescleft {
+    vertical-align: top;
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.areadesc hr {
+    border-top: 2px solid #ccc;
+}
+
+.post-link h2 { 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+//p {
+//  text-indent: 1em;
+//}
+
+#topcontainer {
+    max-width: $content-width;
+    width: $content-width;
+    left: 50%;
+    position: absolute;
+    top: 0px;
+}
+
+#topcontent {
+    width: $content-width;        
+    position: absolute;
+    text-align: left;
+    top: 320px;
+    color: #fff;
+    left: -50%
+}
+
+#mainpagecontent {
+    margin-top: 20px;
+}
+
+#mainpgvenn {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+#mainwrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $content-width;  //width
+}
+
+#mainwrapper h2 {
+    margin-top: 1em;
+    margin-bottom: .4em;
+    color: black;
+}
+
+#mainwrapper h3 {
+    margin-top: .7em;
+    margin-bottom: .4em;
+    color: black;
+}
+
+#topblurb {
+    margin-top: 25px;
+}
+
+.introtext a {
+    color: $brand-color;
+
+}
+
+.introtext a:hover {
+    color: grey;
+}
+
+.researchareas {
+    witdh: 500px;
+}
+
+.bs-docs-header {
+    position: relative;
+    //padding: 30px 15px;
+    text-align: center;
+    background-color: black; // #212121;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1.0) 100%), // 33
+    linear-gradient(to right, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
+    linear-gradient(to left, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
+    url($baseurl + "/assets/syracusepic.png");
+    background-size: 999px 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#researchareas {
+    magin: auto;
+}
+
+
+.post-link {
+    font-size: 12pt;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.social-media-list .glyphicon-calendar {
+    margin-right: 5px;
+}
+
+.tagbox {
+    font-size: 11pt;
+}
+
+.post-image {
+    margin: auto;
+    display: block;
+}
+
+.post {
+    font: #{$base-font-size}/#{$base-line-height} $base-font-family;
+}
+
+#mainwrapper {
+    font: #{$base-font-size}/#{$bigger-line-height} $base-font-family;
+}
+
+#mainwrapper p {
+    color: #444;
+}
+
+/* .post-preview { */
+/*     position: relative; */
+/* } */
+
+/* .post-preview ::after { */
+/*     content  : ""; */
+/*     position : absolute; */
+/*     z-index  : 1; */
+/*     bottom   : 0; */
+/*     left     : 0; */
+/*     pointer-events   : none; */
+/*     background-image : linear-gradient(to bottom,  */
+/*                                        rgba(255,255,255, 0),  */
+/*                                        rgba(255,255,255, 1) 90%); */
+/*     width    : 100%; */
+/*     height   : 4em; */
+/* } */

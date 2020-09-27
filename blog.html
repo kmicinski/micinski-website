@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+nav: true
 ---
 
 <div class="home">
@@ -11,10 +12,15 @@ title: Blog
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <span class="post-link">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </span>
+        <span class="tagbox">
+          {% for tag in post.categories %}
+          <span class="label label-info">{{ tag }}</span>
+          {% endfor %}
+        </span>
+        <p class="post-preview"> {{ post.content | strip_html | truncatewords: 50 }} </p>
       </li>
     {% endfor %}
   </ul>

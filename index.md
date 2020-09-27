@@ -1,37 +1,129 @@
 ---
-layout: page
-title: About
+layout: mainpage
 ---
 
-<img src="{{ "/assets/krisold.jpg" | prepend: site.baseurl }}" alt="A somewhat dated picture of me" class="krispic" />
+## Research
 
-I’m a PhD student in computer science at the University of Maryland,
-College Park. My research focuses on security for mobile devices using
-a combination of systems and language based techniques. I’m a member
-of the [PLUM](http://www.cs.umd.edu/projects/PL/) group, advised by
-Jeff Foster. I also routinely collaborate with the rest of the members
-of the PLUM lab and [Michael Clarkson](http://www.cs.cornell.edu/~clarkson/).
+My goal is to keep users secure as they use modern systems. This is a
+challenging problem. Writing secure code is hard. Checking untrusted
+code is even harder. Developers are not always incentivized towards
+security. In some cases it is not always clear what security even
+means.
 
-You can find a list of my publications on my Google Scholar
-profile. You may also be interested in the lab’s Github page.
+For example, consider an app that shows users nearby coffee shops
+frequented by their friends. Such an app may leak or store the user's
+location (e.g., to an ad provider) in a way they do not
+intend. Sometimes, the developer is not even aware they are violating
+the user's privacy (for example, if the developer uses an ad library
+and they are unaware it collects location data). Even if the developer
+is aware of how location is being collected, users may not assume that
+it is being stored permanently. You can look at some of my recent
+[publications](/publications) to get an idea of the projects I'm
+currently working on to help solve these problems.
 
-# Projects
+To help achieve this goal, I use techniques from the following areas:
 
-Major projects I’ve worked on include:
+<table id="mainpgvenn">
+  <tr id="areastr">
+    <td width="50%">
+    <svg width="350" height="300" xmlns="http://www.w3.org/2000/svg">
+        <circle fill-opacity=".4" r="100" cx="100" cy="100" fill="red" 
+            id="circle1" />
+    <text font-weight="bold" xml:space="preserve" 
+        text-anchor="start" 
+            font-family="Helvetica, Arial, sans-serif"
+            font-size="24" 
+            y="100" x="30" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Security</text>
+    <circle fill-opacity=".4" r="100" cx="250" cy="100" fill="green" 
+            id="circle2" />
+    <text font-weight="bold" xml:space="preserve" 
+        text-anchor="start" 
+            font-family="Helvetica, Arial, sans-serif"
+            font-size="24" 
+            y="100" x="250" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">PL</text>
+    <circle fill-opacity=".4" r="100" cx="175" cy="200" fill="blue" 
+            id="circle3" />
+    <text font-weight="bold" xml:space="preserve" 
+        text-anchor="start" 
+            font-family="Helvetica, Arial, sans-serif"
+            font-size="24" 
+            y="235" x="125" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Systems</text>
+   </svg>
+   </td>
+   <td id="areadesc">
+       <div><h2 style="text-align:center">Areas I work in</h2><br />
+           <h4 style="text-align:center">(mouse over)</h4>
+      </div>
+   </td>
+   <td id="secdesc" class="areadescleft" style="display:none">
+      <h3>Security</h3>
+      <hr />
+      <p>Security is a broad area, but unified by a common challenge:
+      identifying gaps between abstractions that allow potential
+      attackers to exploit systems. I frequently use definitions from
+      security such as <a
+      href="https://en.wikipedia.org/wiki/Non-interference_(security)">noninterference</a>
+      and techniques such as <a
+      href="https://en.wikipedia.org/wiki/Process_isolation">process
+      isolation</a>. My current work addresses key challenges in <a
+      href="https://en.wikipedia.org/wiki/Reverse_engineering">reverse
+      engineering</a></p>
+   </td>
+   <td id="pldesc" class="areadescleft" style="display:none">
+      <h3>Programming Languages</h3>
+      <hr />
+      <p>Reasoning about a program's security requires being able to
+      precisely define its
+      behavior. <a href="https://en.wikipedia.org/wiki/Programming_language_theory">Programming language theory</a>
+      allows us to treat programs as artifacts. I frequently use
+      techniques from PL to define and reason about programs. Some of
+      these techniques include
+      <a href="https://en.wikipedia.org/wiki/Static_program_analysis">static analysis</a>
+      <a href="https://en.wikipedia.org/wiki/Abstract_interpretation">abstract interpretation</a>
+      and
+      <a href="https://en.wikipedia.org/wiki/Symbolic_execution">symbolic execution</a>.</p>
+      </td>
+   <td id="hcidesc" class="areadescleft" style="display:none">
+      <h3>Systems</h3>
+      <hr />
 
-- The Redexer binary rewriter, with Jinseong Jeon and our
-collaborators. Redexer instruments Dalvik binaries (the executable
-format for Android apps), which we used for finer grained permissions
-and measuring utility of apps with fuzzed inputs.
+      <p>Theory is useful for formally arguing about what security
+      means and how to enforce it. But ultimately we want to
+      <i>implement</i> our ideas in real systems. A core focus of my
+      work is to scale well-engineered solutions to challenging
+      problems up to production systems.</p>
 
-- Temporal Logics for Hyperproperties which seeks to develop logical
-foundations for security statements that quantify over multiple
-executions of a program and relate those executions using
-predicates. This work allows stating a wide variety of statements
-about program security, such as noninterference and observational
-determinism.
+  </td>
+  </tr>
 
-- GUI based declassification for Android. My current work applies
-static analysis to Android programs, using declassification policies
-based on user inputs.
+</table>
 
+I am lucky to have a great set of collaborators, many from the [PLUM
+lab](https://github.com/plum-umd) at the University of Maryland, but
+also at the [University of Alabama](https://thomas.gilray.org/),
+[Vermont](http://david.darais.com/), and
+[Tufts](https://www.cs.tufts.edu/~jfoster/). You can find a list of my
+publications [here](/publications) (and also on my [Google
+Scholar](https://scholar.google.com/citations?user=HpJLJWUAAAAJ&hl=en)
+profile).
+
+### Undergraduate Research and Theses
+
+Note that I am particularly excited to collaborate with Syracuse
+students. As you can likely tell from this page, my research is
+generally in programming languages, but related areas (especially
+computer security) also appeal to me. If you would like to pursue
+undergraduate research, please drop me a line so we can discuss!
+
+You should also read my thoughts on [goals and expectations for
+undergraduate research](/undergrad-research-goals).
+
+## Teaching
+
+- Spring 2020: CIS352:  Programming Languages--Theory and Practice
+- Fall 2019: [CIS700: Program Analysis](http://www.kmicinski.com/program-analysis)
+- Spring 2019: [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cs245)
+- Fall 2018: [CMSC395: Mobile Apps for Social Change](http://kmicinski.com/mobile-apps/)
+- Fall 2018: [CMSC107: Introduction to Computer Science and Data Structures](http://kmicinski.com/cs107/)
+- Spring 2018: [CMSC311: Computer Security](http://www.kmicinski.com/cybersecurity-course)
+- Fall 2017: [CMSC245: Principles of Programming Languages](http://www.kmicinski.com/cmsc245)
