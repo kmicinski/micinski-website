@@ -2,7 +2,6 @@
 layout: post
 title:  "Program Visualization as Abstract Interpretation"
 date:   2016-05-11
-categories: program-analysis abstract-interpretation
 ---
 
 For this past semester, I've been thinking in a semi-principaled way

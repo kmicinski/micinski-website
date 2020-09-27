@@ -2,7 +2,6 @@
 layout: post
 title:  "The Environment Problem and Abstract Counting"
 date:   2016-03-06
-categories: program-analysis
 ---
 
 Over the weekend I attempted to read a paper by Matt Might called
