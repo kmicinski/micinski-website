@@ -1,0 +1,14 @@
+I"�<p>Over the weekend I attempted to read a paper by Matt Might called
+<a href="http://matt.might.net/papers/might2007lfa.pdf">Logic Flow Analysis</a>. Logic
+Flow Analysis promises to marry constraint solvers and abstract
+interpretation so that they play off each other to produce better
+analysis results. Unfortunately, I fell somewhat flat on this, as the
+amount of technical detail in the paper is fairly overwhelming. So,
+instead, I switched to a simplified version of the paper Matt
+recommended I read instead: <a href="http://matt.might.net/papers/might2010shape.pdf">“Shape Analysis in the Absence of Pointers
+and Structure”</a>. The
+paper describes an important problem in program analysis I hadn’t
+realized before, and manages to do so in a fairly approachable manner
+(meaning people like myself can read it). Or at least, as approachable
+as a paper can be whilst still including lines like the following:</p>
+:ET

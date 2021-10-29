@@ -1,0 +1,78 @@
+I"�<p>Here’s the tip: have your computer read your writing back to
+you. Listen to how it sounds. Then, iterate until it conveys what
+you’d like to hear. On a mac, you can do this it like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>say -r words_per_minute "My speech goes here"
+</code></pre></div></div>
+
+<p>I do this to either:</p>
+
+<ul>
+  <li>
+    <p>Read the text back to me quickly (<code class="language-plaintext highlighter-rouge">-r 240-270</code>). This helps follow
+along with a document in front of me and check it for flow. It also
+catches miswordings, (some) grammar errors, and typos.</p>
+  </li>
+  <li>
+    <p>Close my eyes, sit back, and really try to absorb the text. I listen
+slowly, around 180-200 words per minute. This allows me to hear
+places where the text sounds awkward or redundant.</p>
+  </li>
+</ul>
+
+<p>The book <a href="https://www.amazon.com/BUGS-Writing-Revised-Guide-Debugging/dp/020137921X">BUGS in
+Writing</a>
+talks at length about developing an “ear” for good writing. While I
+found the book’s content useful, it’s decidedly hard to be able to
+objectively “hear” your own writing. I have a tough time divorcing the
+process of reading from pondering over the endless ways I could
+improve any given sentence.</p>
+
+<p>I’ve found that listening to the text spoken back to you is a great
+way to perform rapid prototyping on documents. For example, I wrote a
+rough draft of this post, listened to it, and then restructured based
+on what I heard. I don’t think of myself as a naturally good
+writer. Forcing myself to slow down and concentrate naturally shifts
+my sentences towards being shorter and more concise.</p>
+
+<p>Here’s an example from the syllabus for my upcoming security course,
+which I was editing today:</p>
+
+<blockquote>
+  <p>To understand how attackers think, we will learn about the attacks
+they employ. But understanding a collection of attacks is not alone
+sufficient for helping us understand how to build secure systems. So
+alongside attacks, we will also cover the theory behind building
+defenses into our systems. We will dissect a number of real-world
+attacks (such as Heartbleed or WannaCry) and reflect upon what could
+have been done to prevent them. To complement these examples, will
+learn the theoretical underpinnings of security that apply across
+systems.</p>
+</blockquote>
+
+<p>I spent some amount of time going over this text, but never really
+“heard” it all together. When I did, I immediately identified the
+problem: the paragraph was saying the same thing twice, breaking the
+natural flow.</p>
+
+<p>I then came up with this:</p>
+
+<blockquote>
+  <p>To understand how attackers think, we will learn about the attacks
+they employ. We will dissect a number of real-world attacks (such as
+Heartbleed or WannaCry) and reflect upon what could have been done
+to prevent them. But understanding a collection of attacks is not
+alone sufficient for helping us understand how to build secure
+systems. So alongside attacks, we will also learn the theoretical
+underpinnings of security, and use it to build defenses into our
+systems.</p>
+</blockquote>
+
+<p>Which sounds a lot better to me!</p>
+
+<p>By the way, I learned this trick from Philip Guo:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Do other people do this too? I often use text-to-speech to have my computer/phone read my own writing back to me to sense how it sounds</p>&mdash; Philip Guo (@pgbovine) <a href="https://twitter.com/pgbovine/status/910182577767514113">September 19, 2017</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+:ET

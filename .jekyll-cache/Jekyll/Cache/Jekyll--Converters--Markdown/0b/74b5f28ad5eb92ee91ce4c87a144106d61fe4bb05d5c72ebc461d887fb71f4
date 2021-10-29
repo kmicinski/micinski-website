@@ -1,0 +1,7 @@
+I"h<p>It is well known that security policies for programs (such as
+<a href="https://en.wikipedia.org/wiki/Non-interference_(security)">noninterference</a>) are not properties of a single run, but rather of
+properties about sets of runs. For example, the following program uses
+a so-called <em>implicit</em> flow to exfiltrate the value of its secret
+input:</p>
+
+:ET
