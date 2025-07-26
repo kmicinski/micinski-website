@@ -3,6 +3,7 @@ layout: post
 title:  "Certifying Interpreters in Racket"
 date:   2022-08-14
 categories: dependent-types, functional-programming, theorem-proving
+permalink: /certifying-interpreters
 ---
 
 When I began programming, I read a copy of Richard Steven's "Programming in the UNIX Environment." Ultimately, my early experimentations with C were a failure; however, I later read David Beazley's "Python: Essential Reference," and was quickly able to pick up the UNIX API via it's much simpler (admittedly, largely due to Beazley's writing) Python counterpart. After teaching my undergraduate PL courses in Scheme variants these past few years I have wondered if we can understand type theory's operationalization (via proof objects) using a similar shift in perspective.
@@ -78,17 +79,17 @@ precisely the reason we're doing it this way.
 
 Of course it would be possible (especially in such a simple semantics
 as this) to define `e, ρ ⇓ v` using substitution to implement
-variables; I explicitly materialize environments is a choice I make to
-(a) anticipate closures and (b) present a representational challenge
-upon which I would like to expand a bit. Of course, using Racket as
-our metalanguage, we could simply use hashes for environments. But
+variables; I explicitly materialize environments to (a) anticipate
+closures (later) and (b) present a representational challenge upon
+which I would like to expand a bit. Of course, using Racket as our
+metalanguage, we could simply use hashes for environments. But
 remember---we are trying to appease the pedants among us, thus
 representation must be as symbolic as possible. Similarly, I represent
-the naturals symbolically. I also internalize a function to add
-numbers, which I use in the natural-deduction rule for addition. I
-admit that eliding `fix` in the source language feels a bit silly, but
-I would point out that once normalization of `plus` happens, it's all
-structural comparison.
+the naturals symbolically. I do allow myself a serious concession: I
+internalize `plus`, as I elide `fix` in the source language. If this
+disappoints you, I would say there's no fundamental barrier; we could
+easily-enough (via environments) implement application and then a
+fixed-point combinator.
 
 ```
 ;; naturals
@@ -125,13 +126,16 @@ produces proofs. And, of course, this is the biggest drawback of using
 an untyped language to do this---we only get some rough syntactic
 checking, similar to tools such as Ott but not dependently-typed
 languages or provers. To avoid completely defeating the purpose of our
-exercise here, I have followed a bit of a trick to keep rely minimally
-on Racket as a metatheory: because many objects internal to the
-semantics (e.g., numbers, environments, and proofs) are represented
-purely symbolically (as S-expressions), we primarily rely upon Racket
-for S-expression equality and dispatch (matching). Aside from `plus`,
-our semantics, while implemented in Racket, is essentially existential
-fixed-point logic (whose Herbrand base comprises S-expressions).
+exercise here, I have followed a bit of a trick to rely minimally on
+Racket as a metatheory: because many objects internal to the semantics
+(e.g., numbers, environments, and proofs) are represented purely
+symbolically (as S-expressions), we primarily rely upon Racket for
+S-expression equality and dispatch (matching). Aside from `plus` our
+semantics uses a very small subset of Racket: I believe essentially
+either (equivalently) existential fixed-point logic (of a Herbrand
+base comprising S-expressions) or constrained horn clauses (whose
+background logic includes S-expression equality and
+structurally-recursive addition).
 
 ```
 ;; environments
@@ -161,8 +165,10 @@ fixed-point logic (whose Herbrand base comprises S-expressions).
 The implementation of `(⇓ pf e ρ v)` follows its natural deduction
 counterpart (which I have not written down, but try to stylize via my
 spacing). Our procedure checks the proof, recursively calling itself
-to check subproofs---mirroring the top-down process you may follow on a
-whiteboard to check the proof yourself.
+to check subproofs---mirroring the top-down process you may follow on
+a whiteboard to check the proof yourself, though Reynolds points out
+that the order of sub-checks is inherited from the metalanguage (i.e.,
+Racket's control flow).
 
 ```
 ;; proofs of evaluation
@@ -254,7 +260,7 @@ up with doing it in an interactive proof assistant.
              (⇓ proof-e1-v-res e1 ρ v))])]
 ```
 
-#### The Programs
+### The Programs
 
 Compared to the checking, writing the proofs is surprisingly
 straightforward---even pleasant (okay; maybe not pleasant). A common
@@ -269,18 +275,18 @@ checking---this allows us to check the correctness of our evaluators
 as we go, but of course won't prove correctness across all runs, and
 using `define/contract` also interposes the check at *every* callsite
 (a serious overhead), though I am sure you can use your imagination
-about this could be made faster.
+about how this could be made faster.
 
 Let's start with environments, writing a function `(lookup ρ x)`,
 which returns a proof that `x` returns some value `v`--if it doesn't,
 we would just throw a dynamic error due to a match failure--we are
 posting a proof exists. We can write a contract to ensure that the
 code we use to do this is correct. Racket's default arrow contract
-combinator, `->`, is not powerful to express dependent contracts,
-where a property of the result depends on one of the inputs. However,
-Racket's more powerful `->i` does allow dependent contracts, allowing
-us to write a version of `lookup` which both computes what we want and
-checks to ensure its correctness:
+combinator, `->`, is not powerful enough to express dependent
+contracts, where a property of the result depends on one of the
+inputs. However, Racket's more powerful `->i` does allow dependent
+contracts, allowing us to write a version of `lookup` which both
+computes what we want and checks to ensure its correctness:
 
 ```
 ;; decision procedure for lookup -- returns witness and proof of inclusion
@@ -301,7 +307,7 @@ checks to ensure its correctness:
 ```
 
 Finally, the interpreter itself---unadorned by the ceremony and
-pedantics of checking low-level unification checking---is surprisingly
+pedantics of low-level unification checking---is surprisingly
 unintimidating and to-the-point.
 
 ```
@@ -384,7 +390,7 @@ unintimidating and to-the-point.
                    ((if0 ,e0 ,e1 ,e2) ,ρ ⇓ ,v)))])])]))
 ```
 
-#### Visualizing our Proofs
+### Visualizing our Proofs
 
 Alright, so now our interpreter writes proofs--what do they look like?
 Thankfully, we used S-expressions.
@@ -405,9 +411,6 @@ Thankfully, we used S-expressions.
      "\\ensuremath{\\mapsto}")))
 ```
 
-Running the above code produces attractive-enough LaTeX. In fact I
-used this feature when doing some debugging the interpreter itself.
-
 Here's the complete derivation of `((plus 1 (if0 0 1 2)))`:
 
 ![Proof of ((plus 1 (if0 0 1 2)))]({{ site.baseurl}}/assets/plus-1.png){:style="width:650px"}{:class="post-image"}
@@ -418,7 +421,7 @@ rendering...
 ![Longer proof]({{ site.baseurl}}/assets/longproof.png){:style="width:650px"}{:class="post-image"}
 
 
-#### Metatheoretic Concessions for the Working Programmer
+### Metatheoretic Concessions for the Working Programmer
 
 Obviously we would never write an interpreter in Racket the way we did
 above: there's too much extraneous math (i.e., the proof objects). I
@@ -452,10 +455,10 @@ implementation.
        [_ (eval-simpl e2 ρ)])]))
 ```
 
-#### Conclusion
+### Conclusion
 
 Do I think this is the future of dependently typed programming? Of
-anything? Perhaps also no. Racket is not a particularly appealing
+anything? Perhaps both no. Racket is not a particularly appealing
 implementation language for type theory and its pattern matching is
 not designed to scale to settings where higher-order unification is of
 concern to the user. Similarly, this code has serious algorithmic
@@ -480,7 +483,10 @@ interested in experimenting with the code. Adding closures and
 application, for example, should not be too hard; I may illustrate
 that in my course next term.
 
-#### The Code
+Thanks to Quinn Wilton for some corrections to the phrasing in this
+post.
+
+### The Code
 
 ```
 ;; self-certifying interpreters, summer 2022, kris micinski
