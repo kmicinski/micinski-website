@@ -4,30 +4,21 @@ layout: mainpage
 
 ## Research
 
-My current goal is to help enable the next generation of scalable
-logical and deductive frameworks that power static analyses, type
-systems, and binary reverse engineering tools. We achieve this via a
-combination of algorithmic innovations (including a semantic extension
-of datalog to support hash-distributed structured data) and
-fundamentally-new infrastructure at the systems level ([HPDC
-'22](https://kmicinski.com/assets/optimizing-bruck.pdf), [Cluster
-'23](https://kmicinski.com/assets/cluster23.pdf), and [USENIX ATC
-'23](https://kmicinski.com/assets/atc23-shovon.pdf)).  My recent
-interests have focused on high-performance implementations of
-declarative languages to achieve these goals, specifically Datalog,
-where I have supervised the construction of state-of-the-art engines
-in both single-node ([CC '22](https://github.com/s-arash/ascent),
-[OOPSLA '23](https://kmicinski.com/assets/byods.pdf)) and
-[massively-parallel (CC
-'21)](https://dl.acm.org/doi/10.1145/3446804.3446855) backends. As
-concrete examples, our recent efforts have (a) scaled the performance
-of control-flow analyses by orders-of-magnitude (seconds in our system
-versus hours in Soufflé, a best-in-class Datalog engine), (b) built
-all Windows C++ binaries on GitHub to train malware classification
-tools (see [Assemblage](https://github.com/harp-lab/Assemblage)), and
-(c) compiled lattice-oriented Datalog programs to achieve a 50x
-runtime gain (vs. [Flix](https://flix.dev/)) using a [macro-based
-approach in Rust](https://dl.acm.org/doi/abs/10.1145/3497776.3517779).
+My goal is to design the most scalable logical reasoning systems in
+history for code analysis, analytic reasoning, and symbolic AI
+broadly. Over the past several years, the bulk of my interests have
+been focused on extensions to Datalog, where my collaborators and I
+have built the world's fastest Datalog engines for CPUs ([CC
+'22](https://github.com/s-arash/ascent), [OOPSLA
+'23](https://kmicinski.com/assets/byods.pdf)), GPUs ([ASPLOS
+'25](https://dl.acm.org/doi/pdf/10.1145/3669940.3707274), [AAAI
+'25](https://sidharthkumar.io/publications/AAAI2025.pdf)), and
+supercomputing clusters ([VLDB
+'25](https://sidharthkumar.io/publications/vldb2025.pdf), [ICS
+'25](https://sidharthkumar.io/publications/ICS2025.pdf)). In my
+current efforts, I have been working to apply these engines to new
+applications in reverse engineering, static analysis, medical
+reasoning, and related fields.
 
 My [Google Scholar](https://scholar.google.com/citations?user=HpJLJWUAAAAJ&hl=en)
 profile tracks my most up-to-date submissions.
@@ -92,8 +83,8 @@ profile tracks my most up-to-date submissions.
 
 - [NSF PPoSS Large: A Full-stack Approach to Declarative Analytics at Scale](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2316159&HistoricalAwards=false). National Science Foundation. Total: $1,000,037 (5 years)
 - [NSF PPoSS Planning: A Full-stack Approach to Declarative Analytics at Scale](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217037&HistoricalAwards=false). National Science Foundation. Total: $83,761 (1 year)
-- [DARPA V-SPELLS: Verified Security and Performance Enhancement of Large Legacy Software](https://www.darpa.mil/news-events/2020-07-30). Defense Advance Research Projects Agency. Total: $400,000 (4 years)
-- [Assemblage: Scaling Malware Analysis Pipelines](https://github.com/harp-lab/Assemblage). US Department of Defense. Total: $350,000 (3 years)
+- [DARPA V-SPELLS: Verified Security and Performance Enhancement of Large Legacy Software](https://www.darpa.mil/news-events/2020-07-30). Defense Advance Research Projects Agency. Total: $400k (4 years)
+- [Assemblage: Scaling Malware Analysis Pipelines](https://github.com/harp-lab/Assemblage). US Lab for Phys. Sciences. Total: $698k
 
 ## PhD Students
 
