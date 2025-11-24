@@ -1,32 +1,38 @@
 ---
 layout: post
 title:  "Build a Compiler in Five Projects"
-date:   2025-08-01
+date:   2025-11-23
 categories: "functional-programming"
 ---
+
+Class website here: [https://kmicinski.com/cis531-f25](https://kmicinski.com/cis531-f25)
+
 
 Are you interested in building a compiler? Learning how functional
 languages are implemented? Gaining a bit of practical experience with
 x86-64 assembly language? If so, I invite you to try your hand at the
-projects in my class, [CIS531]. CIS531 is a masters-level class on
-compiler design which assumes that (a) you know how to program, (b)
-you've had some exposure to C (know about stack allocation, malloc,
-etc.), and (c) have seen some assembly code. My class projects are in
-the Racket programming language, but if you don't know Racket, it is
-quite easy to learn: I have a [set of YouTube video lectures that
-teaches Racket quickly]!. If you've never heard of Racket before, or
-you're skeptical of functional programming, indulge me for a bit:
-there's no hardcore FP theory or math in this course, and Racket is
-genuinely the best language to use for this specific setup.
+projects in my class,
+[CIS531](https://kmicinski.com/cis531-f25). CIS531 is a masters-level
+class on compiler design which assumes that (a) you know how to
+program, (b) you've had some exposure to C (know about stack
+allocation, malloc, etc.), and (c) have seen some assembly code. My
+class projects are in the Racket programming language, but if you
+don't know Racket, it is quite easy to learn: I have a [set of YouTube
+video lectures that teaches Racket quickly]!. If you've never heard of
+Racket before, or you're skeptical of functional programming, indulge
+me for a bit: there's no hardcore FP theory or math in this course,
+and Racket is genuinely the best language to use for this specific
+setup.
 
 My class follows Prof. Jeremy Siek's excellent book, "Essentials of
 Compilation." While I highly recommend buying the book and supporting
 Prof. Siek, I will also note that there are [free online preliminary
-editions]() floating around; in my class, I followed the free version
-and suggested that students buy the book if doing so fit their
+editions](https://brinckerhoff.org/clements/2194-csc431/essentials-of-compilation.pdf)
+floating around; in my class, I followed the free version an
+suggested that students buy the book if doing so fit their
 goals. However, along with the book, I also have a set of class slides
 along with sporadic course videos, both available on the [class
-website].
+website](https://kmicinski.com/cis531-f25).
 	
 This class builds up to a compiler with the following features:
 - Variables and assignment via `let`
@@ -390,7 +396,10 @@ class free, at least as free as I could given practical
 constraints. This class work on compilation is partially supported by
 our [NSF PPoSS
 large](https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2316159&HistoricalAwards=false),
-which has already produced [many] [cool] [major] [results]. In
+which has already produced [many](https://arxiv.org/pdf/2411.14330)
+[cool](https://dl.acm.org/doi/pdf/10.1145/3721145.3730431)
+[major](https://dl.acm.org/doi/pdf/10.1145/3669940.3707274)
+[results](https://ojs.aaai.org/index.php/AAAI/article/download/33665/35820). In
 subsequent explorations, I am hoping that I can use this class
 compiler as a baseline for highly-scalable engines that reason about
 programs. Given the simple, self-contained nature--and the presence of
