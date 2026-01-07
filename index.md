@@ -96,12 +96,16 @@ profile tracks my most up-to-date submissions.
 
 ## Teaching
 
-I teach CIS352, the undergraduate programming languages at Syracuse,
-every Fall and Spring. The course lectures from Spring 2022's
-iteration are available <a
-href="https://www.youtube.com/playlist?list=PLXaqTeMx01E_eK1ZEpKvKL5KwSaj7cJW9">for
-free on YouTube</a>.
+In Fall 2025 I taught [CIS531](https://kmicinski.com/cis531-f25), an
+MS-level compiler design course.
 
+I regularly teach CIS352, an undergraduate programming languages class
+at Syracuse:
+
+- Upcoming Spring 26 course
+- [Spring 2025](https://kmicinski.com/cis352-f25/)
+- [Fall 2024](https://kmicinski.com/cis352-f24/)
+- [Spring 2024](https://kmicinski.com/cis352-s24/)
 - [Fall 2023](https://kmicinski.com/cis352-f23/)
 - [Spring 2023](https://kmicinski.com/cis352-s23/)
 - [Fall 2022](https://kmicinski.com/cis352-f22/)

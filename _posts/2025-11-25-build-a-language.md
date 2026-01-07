@@ -18,17 +18,18 @@ program, (b) you've had some exposure to C (know about stack
 allocation, malloc, etc.), and (c) have seen some assembly code. My
 class projects are in the Racket programming language, but if you
 don't know Racket, it is quite easy to learn: I have a [set of YouTube
-video lectures that teaches Racket quickly]!. If you've never heard of
-Racket before, or you're skeptical of functional programming, indulge
-me for a bit: there's no hardcore FP theory or math in this course,
-and Racket is genuinely the best language to use for this specific
-setup.
+video lectures that teach Racket
+quickly](https://www.youtube.com/watch?v=2jrwXpUZW7k&list=PLXaqTeMx01E_eK1ZEpKvKL5KwSaj7cJW9)!
+If you've never heard of Racket before, or you're skeptical of
+functional programming, indulge me for a bit: there's no hardcore FP
+theory or math in this course, and Racket is genuinely the best
+language to use for this specific setup.
 
 My class follows Prof. Jeremy Siek's excellent book, "Essentials of
 Compilation." While I highly recommend buying the book and supporting
 Prof. Siek, I will also note that there are [free online preliminary
 editions](https://brinckerhoff.org/clements/2194-csc431/essentials-of-compilation.pdf)
-floating around; in my class, I followed the free version an
+floating around; in my class, I followed the free version and
 suggested that students buy the book if doing so fit their
 goals. However, along with the book, I also have a set of class slides
 along with sporadic course videos, both available on the [class
@@ -297,8 +298,7 @@ variable references and let binding. It grows to all of `R5`.
     ;; Project 5
     [`(,(? R5-exp? e-f) ,(? R5-exp? a-args) ...) #t]
     [`(lambda (,(? symbol? xs) ...) ,(? R5-exp? e-body)) #t]
-    #;[_ #f]
-    ))
+	[_ #f]))
 
 (define (R5-defn? defn)
   (match defn
