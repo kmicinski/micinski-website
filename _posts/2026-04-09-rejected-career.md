@@ -28,7 +28,7 @@ them here to respect the reviewing process.
 
 While I'm frustrated at the rejection, my feeling is that (a) it was
 somewhat my fault for not applying earlier (it's well known that
-second-attempt applicants fail) and (b) the proposal was "not
+second-attempt applicants often fail) and (b) the proposal was "not
 AI/quantum enough." I leave the entire thing here for you to read for
 yourself, so you can be the judge.
 
