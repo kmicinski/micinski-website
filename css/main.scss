@@ -87,14 +87,6 @@ $baseurl: '{{ site.baseurl }}';
     box-shadow: 2px 5px 5px #aaa;
     top: -50px;
     position: relative;
-
-    @include media-query($on-palm) {
-        float: none;
-        margin: 20px auto;
-        display: block;
-        top: 0;
-        position: static;
-    }
 }
 
 .krispic img {
@@ -124,13 +116,6 @@ blockquote {
   float: right;
   width: 300px;
   padding-left: 20px;
-
-  @include media-query($on-palm) {
-    float: none;
-    width: 100%;
-    padding-left: 0;
-    margin-bottom: 20px;
-  }
 }
 
 article img {
@@ -171,35 +156,16 @@ ul p {
     height: 100px;
 }
 
-.introtext h1,h2,h3,h4 {
+.introtext h1,h2,h3,h4 { 
     margin-bottom: 10px;
 }
 
-.introtext ul li {
+.introtext ul li { 
     display: inline
 }
 
 .introtext h1,h2,h3,h4 {
     //text-shadow: 2px 2px 2px rgba(255,255,255,.5);
-}
-
-.introtext {
-    @include media-query($on-palm) {
-        text-align: center;
-
-        h2 {
-            font-size: 1.5em;
-        }
-
-        h3 {
-            font-size: 1.2em;
-        }
-
-        ul li {
-            display: block;
-            margin-bottom: 8px;
-        }
-    }
 }
 
 .areadesc {
@@ -239,102 +205,43 @@ ul p {
     left: 50%;
     position: absolute;
     top: 0px;
-
-    @include media-query($on-palm) {
-        position: relative;
-        width: 100%;
-        left: 0;
-        padding: 0 15px;
-    }
 }
 
 #topcontent {
-    width: $content-width;
+    width: $content-width;        
     position: absolute;
     text-align: left;
     top: 320px;
     color: #fff;
-    left: -50%;
-
-    @include media-query($on-palm) {
-        position: relative;
-        width: 100%;
-        left: 0;
-        top: 0;
-    }
+    left: -50%
 }
 
 #mainpagecontent {
     margin-top: 20px;
     padding: 10px;
-
-    @include media-query($on-palm) {
-        margin-top: 10px;
-        padding: 10px 0;
-    }
 }
 
 #mainpgvenn {
     margin-top: 50px;
     margin-bottom: 40px;
-
-    @include media-query($on-palm) {
-        tr, td {
-            display: block;
-            width: 100% !important;
-        }
-
-        svg {
-            display: none;
-        }
-
-        #areadesc {
-            display: none !important;
-        }
-
-        .areadescleft {
-            display: block !important;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-left: 4px solid $brand-color;
-
-            h3 {
-                margin-top: 0;
-            }
-        }
-    }
 }
 
 #mainwrapper {
     margin-right: auto;
     margin-left: auto;
     max-width: $content-width;  //width
-    padding: 0 $spacing-unit;
-
-    @include media-query($on-palm) {
-        padding: 0 15px;
-    }
 }
 
 #mainwrapper h2 {
     margin-top: 1em;
     margin-bottom: .4em;
     color: black;
-
-    @include media-query($on-palm) {
-        font-size: 1.5em;
-        margin-top: 0.8em;
-    }
 }
 
 #mainwrapper h3 {
     margin-top: .7em;
     margin-bottom: .4em;
     color: black;
-
-    @include media-query($on-palm) {
-        font-size: 1.2em;
-    }
 }
 
 #topblurb {
@@ -359,19 +266,15 @@ ul p {
     //padding: 30px 15px;
     text-align: center;
     background-color: black; // #212121;
-    background-image:
+    background-image: 
     linear-gradient(to bottom, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 1.0) 100%), // 33
-    linear-gradient(to right, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%),
-    linear-gradient(to left, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%),
+    linear-gradient(to right, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
+    linear-gradient(to left, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1.0) 100%), 
     url($baseurl + "/assets/syracusepic.png");
-    background-size: cover;
+    background-size: 999px 400px;
     height: 400px;
     background-repeat: no-repeat;
     background-position: center;
-
-    @include media-query($on-palm) {
-        height: 250px;
-    }
 }
 
 #researchareas {
