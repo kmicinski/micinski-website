@@ -33,6 +33,10 @@ currently includes 22 lectures between 10 and 35 minutes. I work to
 release several update videos from time to time (specifically to
 correct errata and refresh course content).
 
+- [CIS352 -- Spring 2026](https://kmicinski.com/cis352-s26)
+- [CIS352 -- Spring 2025](https://kmicinski.com/cis352-f25/)
+- [CIS352 -- Fall 2024](https://kmicinski.com/cis352-f24/)
+- [CIS352 -- Spring 2024](https://kmicinski.com/cis352-s24/)
 - [CIS352 -- Fall 2023](https://kmicinski.com/cis352-f23/)
 - [CIS352 -- Spring 2023](https://kmicinski.com/cis352-s23/)
 - [CIS352 -- Fall 2022](https://kmicinski.com/cis352-f22/)

@@ -90,7 +90,7 @@ profile tracks my most up-to-date submissions.
 
 - Arash Sahebolamri (graduated PhD, May 2023)
   - Dissertation: "Improving Logic Programming for Program Analysis."
-- Yihao Sun (started PhD 2020)
+- Yihao Sun (graduating June 2026, heading to Utah State)
 - Chang Liu (started PhD 2023)
 - Neda Abdolrahimi (started PhD 2023)
 
@@ -102,7 +102,7 @@ MS-level compiler design course.
 I regularly teach CIS352, an undergraduate programming languages class
 at Syracuse:
 
-- Upcoming Spring 26 course
+- [Spring 2026](https://kmicinski.com/cis352-s26)
 - [Spring 2025](https://kmicinski.com/cis352-f25/)
 - [Fall 2024](https://kmicinski.com/cis352-f24/)
 - [Spring 2024](https://kmicinski.com/cis352-s24/)
