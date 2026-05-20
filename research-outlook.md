@@ -102,5 +102,5 @@ when I was a PhD student at Maryland (here's a
 it). You basically come and give a brief update about what you've done
 and will do. These meetings are intended to motivate you and provide a
 light form of accountabilty to each other: you won't get in trouble if
-you haven't dont much, but ideally they'll be a place to help
+you haven't done much, but ideally they'll be a place to help
 understand the nuts-and-bolts of how research works.
