@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "sass:color";
+@use "variables" as *;
 
 /**
  * Reset some basic elements
@@ -35,9 +36,8 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: math.div($spacing-unit, 2);
+ul, ol, dl, figure {
+    @include vertical-rhythm;
 }
 
 
@@ -166,23 +166,11 @@ pre {
     margin-left: auto;
     //padding-right: $spacing-unit;
     //padding-left: $spacing-unit;
-    @extend %clearfix;
+    @include clearfix;
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    }
-}
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }
 

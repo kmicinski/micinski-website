@@ -1,0 +1,29 @@
+// Vendor CSS imports and @font-face declarations. This partial is
+// @used first in main.scss so these CSS `@import url(...)` rules are
+// emitted before any other style rules, as the CSS spec requires.
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+
+/* Sherman Sans Book */
+
+@font-face {
+ font-family: "ShermanSans";
+ src: url("https://assets.syracuse.edu/fonts/shermansans-book.woff2") format("woff2"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book.woff") format("woff"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book.eot") format("embedded-opentype");
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+ unicode-range: U+0020-007F, U+00A9, U+00AE, U+2013-201D;
+}
+@font-face {
+ font-family: "ShermanSans";
+ src: url("https://assets.syracuse.edu/fonts/shermansans-book-intl.woff2") format("woff2"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book-intl.woff") format("woff"),
+  url("https://assets.syracuse.edu/fonts/shermansans-book-intl.eot") format("embedded-opentype");
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+ unicode-range: U+00A0-00A8, U+00C0-024F, U+201E-2026;
+}
