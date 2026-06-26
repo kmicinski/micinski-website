@@ -402,7 +402,7 @@ Thankfully, we used S-expressions.
   (define antecedents (reverse (list-tail (reverse (list-tail (cdr pf) 0)) 2)))
   (foldr
    (lambda (k v acc) (string-replace acc k v))
-   (format "{{\\tiny \\textsc{ ~a }} \n \\frac{ ~a }{ \\texttt{ ~a } }}"
+   (format "{% raw %}{{\\tiny \\textsc{ ~a }} \n \\frac{ ~a }{ \\texttt{ ~a } }}{% endraw %}"
            name
            (string-join (map pf->tex antecedents) "\\,")
            (consequent pf))
@@ -738,7 +738,7 @@ post.
   (define antecedents (reverse (list-tail (reverse (list-tail (cdr pf) 0)) 2)))
   (foldr
    (lambda (k v acc) (string-replace acc k v))
-   (format "{{\\tiny \\textsc{ ~a }} \n \\frac{ ~a }{ \\texttt{ ~a } }}"
+   (format "{% raw %}{{\\tiny \\textsc{ ~a }} \n \\frac{ ~a }{ \\texttt{ ~a } }}{% endraw %}"
            name
            (string-join (map pf->tex antecedents) "\\,")
            (consequent pf))
