@@ -15,7 +15,7 @@ rejected as competitive, my position is that the proposal is nicely
 written and addresses a serious and important challenge in a credible
 way. I also notice that the only PIs who have had NSF CAREER proposals
 funded this year have been in AI / quantum--this is seriously
-frustrationg to see, given that NSF is a crucial research vehicle for
+frustrating to see, given that NSF is a crucial research vehicle for
 the US, and I am quite concerned that NSF is becoming a shell of its
 former self, having been seriously damaged by [top-down
 control](https://www.science.org/content/article/nsf-officials-break-silence-how-ai-and-quantum-now-drive-agency-grantmaking). I
@@ -23,7 +23,7 @@ still strongly support NSF and will gladly review for it in the
 future. Given that it is my last chance for the NSF CAREER before
 tenure, I want to upload it for posterity. To all junior faculty
 applying to NSF CAREER: best wishes, please feel free to reach out and
-I am absolutely happy to send the full (unedited) reviewed, I elide
+I am absolutely happy to send the full (unedited) reviews, I elide
 them here to respect the reviewing process.
 
 While I'm frustrated at the rejection, my feeling is that (a) it was
