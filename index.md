@@ -90,9 +90,9 @@ profile tracks my most up-to-date submissions.
 
 - Arash Sahebolamri (graduated PhD, May 2023)
   - Dissertation: "Improving Logic Programming for Program Analysis."
-- Yihao Sun (graduating June 2026, heading to Utah State)
+- Yihao Sun (graduated PhD, June 2026; now professor at Utah State)
 - Chang Liu (started PhD 2023)
-- Neda Abdolrahimi (started PhD 2023)
+- Jin Yang (started PhD Fall 2025)
 
 ## Teaching
 
