@@ -104,8 +104,8 @@ themselves.
 In Fall 2025 I taught [CIS531](https://kmicinski.com/cis531-f25), an
 MS-level compiler design course.
 
-I regularly teach CIS352, an undergraduate programming languages class
-at Syracuse:
+I teach CIS352, an undergraduate programming languages class, every
+spring at Syracuse:
 
 - [Spring 2026](https://kmicinski.com/cis352-s26)
 - [Spring 2025](https://kmicinski.com/cis352-s25/)

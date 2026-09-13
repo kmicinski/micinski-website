@@ -16,7 +16,7 @@ both directions: using AI for attacks and defenses, and securing AI
 systems themselves. The course progresses from classical foundations
 (reverse engineering, memory attacks) to contemporary topics including
 adversarial machine learning, prompt injection, jailbreaking, and
-agent escape. Cross-listed as CIS 400/600 and CSE 400/691.
+agent escape.
 
 ### [CIS 531, Fall 2025](https://kmicinski.com/cis531-f25/) -- Compiler Construction
 
@@ -28,7 +28,8 @@ type systems, and optimization.
 ### [CIS 352](https://kmicinski.com/cis352-s26/) -- Principles of Programming Languages
 
 I am the lead instructor of CIS352, Principles of Programming
-Languages, at Syracuse. The course is a project-focused introduction
+Languages, which I teach every spring at Syracuse (it previously ran
+every fall and spring). The course is a project-focused introduction
 to the design, semantics, and implementation of modern higher-order
 programming languages. Course projects give students significant
 programming skills that involve building fragments of interpreters
@@ -108,6 +109,8 @@ analysis. We first cover standard formulations of programming language
 semantics (e.g., metacircular interpreters, big/small-step semantics)
 and continue by introducing ideas from lattice theory, abstract
 interpretation, and abstract-machine-based analysis techniques.
+
+## Before Syracuse
 
 ### [CMSC 245, Spring 2019](http://kmicinski.com/cs245)
 
