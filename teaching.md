@@ -9,22 +9,38 @@ nav: true
 I teach a variety of courses, largely focused on programming
 languages, compilers, and security.
 
-### [CIS 352](https://kmicinski.com/cis352-f22/) -- Principles of Programming Languages
+### [CIS 400/600, Fall 2026](https://kmicinski.com/ai-security-course/) -- Cybersecurity and Artificial Intelligence
+
+My newest course examines how emerging AI systems reshape security in
+both directions: using AI for attacks and defenses, and securing AI
+systems themselves. The course progresses from classical foundations
+(reverse engineering, memory attacks) to contemporary topics including
+adversarial machine learning, prompt injection, jailbreaking, and
+agent escape. Cross-listed as CIS 400/600 and CSE 400/691.
+
+### [CIS 531, Fall 2025](https://kmicinski.com/cis531-f25/) -- Compiler Construction
+
+An MS-level compiler design course covering the full pipeline from
+interpretation to x86 code generation: parsing, intermediate
+representations (SSA/ANF), control-flow analysis, register allocation,
+type systems, and optimization.
+
+### [CIS 352](https://kmicinski.com/cis352-s26/) -- Principles of Programming Languages
 
 I am the lead instructor of CIS352, Principles of Programming
-Languages, every Fall/Spring at Syracuse. The course is a
-project-focused introduction to the design, semantics, and
-implementation of modern higher-order programming languages. Course
-projects give students significant programming skills that involve
-building fragments of interpreters and compilers. The course uses the
-Racket programming language, and involves the implementation of
-Scheme-like languages; topics in other programming paradigms
-(object-oriented, imperative, or logic) are discussed upon
-occasion. Because our introductory sequence uses Haskell, CIS352's
-initial focus is on untyped operational semantics, moving into
-concepts from type theory as the course progresses. Current course
-projects include network connectivity, ASCII-art rendering, Church
-encoding, metacircular interpreters, and type system implementation.
+Languages, at Syracuse. The course is a project-focused introduction
+to the design, semantics, and implementation of modern higher-order
+programming languages. Course projects give students significant
+programming skills that involve building fragments of interpreters
+and compilers. The course uses the Racket programming language, and
+involves the implementation of Scheme-like languages; topics in other
+programming paradigms (object-oriented, imperative, or logic) are
+discussed upon occasion. Because our introductory sequence uses
+Haskell, CIS352's initial focus is on untyped operational semantics,
+moving into concepts from type theory as the course
+progresses. Current course projects include network connectivity,
+ASCII-art rendering, Church encoding, metacircular interpreters, and
+type system implementation.
 
 The <a
 href="https://www.youtube.com/watch?v=2jrwXpUZW7k&list=PLXaqTeMx01E_eK1ZEpKvKL5KwSaj7cJW9">Spring
@@ -44,30 +60,54 @@ correct errata and refresh course content).
 - [CIS352 -- Spring 2021](http://kmicinski.com/cis352-s21/)
 - [CIS352 -- Spring 2020](http://kmicinski.com/cis352-s20/)
 
-### [CIS 700, Fall 2023](http://kmicinski.com/cis700-f23)
+### [CIS 700, Fall 2024](https://kmicinski.com/cis700-f24/) -- Modern Symbolic AI and Automated Reasoning
 
-This PhD-level seminar is "Formal Methods and Modern Symbolic AI." The
-course is an in-depth exploration of modern research in automated
-reasoning, including SAT (DPLL, CDCL), SMT, first-order reasoning,
-intuitionistic type theory, model checking, equational reasoning,
-Datalog, ASP, and related paradigms.
+A second offering of my PhD-level seminar on automated reasoning,
+covering propositional logic and resolution, intuitionistic type
+theory and proof assistants, SAT/SMT solving, and Datalog and logic
+programming.
 
-### [CIS 700, Fall 2022](http://kmicinski.com/cis700-f22)
+### [CIS 700, Fall 2023](http://kmicinski.com/cis700-f23) -- Formal Methods and Modern Symbolic AI
 
-This PhD-level seminar is "Language-Based Security." We discuss
-relevant particulars of programming language semantics and logic. We
-then move to discussing topics such as hyperproperties, security type
-systems, and full abstraction.
+This PhD-level seminar is an in-depth exploration of modern research
+in automated reasoning, including SAT (DPLL, CDCL), SMT, first-order
+reasoning, intuitionistic type theory, model checking, equational
+reasoning, Datalog, ASP, and related paradigms.
 
-### [CIS 700, Fall 2020/21](http://kmicinski.com/program-analysis)
+### [CIS 700, Fall 2022](http://kmicinski.com/cis700-f22) -- Language-Based Security
+
+This PhD-level seminar discusses relevant particulars of programming
+language semantics and logic. We then move to discussing topics such
+as hyperproperties, security type systems, and full abstraction.
+
+### [CIS 700, Fall 2021](https://kmicinski.com/cis700-f21/) -- Malware Analysis
+
+This PhD seminar examines memory-safety vulnerabilities and defenses:
+shellcoding, return-oriented programming, symbolic execution, and
+abstract interpretation, with an emphasis on analysis methods for
+identifying malicious code behavior.
+
+### [CIS 400, Fall 2021](https://kmicinski.com/cis400-f21/) -- Introduction to Compiler Construction
+
+An undergraduate compilers course: interpreters, closures and
+continuations, intermediate representations (A-normal form and
+continuation-passing style), assembly generation, and static
+analysis, culminating in a working compiler.
+
+### [CIS 700, Fall 2020](https://kmicinski.com/cis700-f20/) -- Formal Methods in Computer Security
+
+This PhD seminar surveys the foundations of formal methods (logics,
+model checking, and related tools) and their application to reasoning
+about the security of computational systems, combining foundational
+material with research-paper discussions and programming projects.
+
+### [CIS 700, Fall 2019](http://kmicinski.com/program-analysis) -- Program Analysis: Foundations and Applications
 
 This PhD seminar course focuses on the theory and practice of static
 analysis. We first cover standard formulations of programming language
 semantics (e.g., metacircular interpreters, big/small-step semantics)
 and continue by introducing ideas from lattice theory, abstract
 interpretation, and abstract-machine-based analysis techniques.
-
-The [2021 version](https://kmicinski.com/cis700-f21/) focused on malware analysis.
 
 ### [CMSC 245, Spring 2019](http://kmicinski.com/cs245)
 

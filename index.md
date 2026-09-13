@@ -90,11 +90,16 @@ profile tracks my most up-to-date submissions.
 
 - Arash Sahebolamri (graduated PhD, May 2023)
   - Dissertation: "Improving Logic Programming for Program Analysis."
-- Yihao Sun (graduated PhD, June 2026; now professor at Utah State)
+- Yihao Sun (graduated PhD, June 2026; now Assistant Professor at Utah State)
 - Chang Liu (started PhD 2023)
 - Jin Yang (started PhD Fall 2025)
 
 ## Teaching
+
+In Fall 2026 I am teaching [CIS400/600: Cybersecurity and Artificial
+Intelligence](https://kmicinski.com/ai-security-course/), a new course
+on using AI for attacks and defenses, and on securing AI systems
+themselves.
 
 In Fall 2025 I taught [CIS531](https://kmicinski.com/cis531-f25), an
 MS-level compiler design course.
@@ -113,8 +118,11 @@ at Syracuse:
 - [Spring 2021](http://kmicinski.com/cis352-s21/)
 - [Spring 2020](http://kmicinski.com/cis352-s20/)
 
-Each fall I also teach a special topics seminar (CIS700 at Syracuse).
-During Fall 2023, I taught a course on [formal methods and modern symbolic AI](https://kmicinski.com/cis700-f23).
+I also regularly teach PhD-level special topics seminars (CIS700 at
+Syracuse), most recently on [modern symbolic AI and automated
+reasoning](https://kmicinski.com/cis700-f24) (Fall 2024, and
+previously [Fall 2023](https://kmicinski.com/cis700-f23)). A full
+list is on my [teaching page](/teaching/).
 
 ## Undergraduate Research and Theses
 
