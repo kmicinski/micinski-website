@@ -93,8 +93,12 @@ module Jekyll
           File.open(bibhtml, 'w') {|f| f.write(content_bibhtml)}
         end
 
-        # return the produced output
-        IO.read(outname)
+        # return the produced output. bibtex2html links the entries to
+        # the bib file with a relative href; that only resolves when the
+        # page lives next to it, so with a pretty permalink such as
+        # /publications/ the links would 404. Make them site-absolute.
+        baseurl = context['site']['baseurl'].to_s
+        IO.read(outname).gsub("href=\"#{bibhtml}", "href=\"#{baseurl}/#{bibhtml}")
       end
     end
   end

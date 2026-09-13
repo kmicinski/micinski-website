@@ -34,7 +34,7 @@ release several update videos from time to time (specifically to
 correct errata and refresh course content).
 
 - [CIS352 -- Spring 2026](https://kmicinski.com/cis352-s26)
-- [CIS352 -- Spring 2025](https://kmicinski.com/cis352-f25/)
+- [CIS352 -- Spring 2025](https://kmicinski.com/cis352-s25/)
 - [CIS352 -- Fall 2024](https://kmicinski.com/cis352-f24/)
 - [CIS352 -- Spring 2024](https://kmicinski.com/cis352-s24/)
 - [CIS352 -- Fall 2023](https://kmicinski.com/cis352-f23/)
@@ -62,8 +62,8 @@ systems, and full abstraction.
 ### [CIS 700, Fall 2020/21](http://kmicinski.com/program-analysis)
 
 This PhD seminar course focuses on the theory and practice of static
-analysis. We first cover standard formulations of programming langauge
-semantics (e.g., metacircular interpreters, big/small-step sematics)
+analysis. We first cover standard formulations of programming language
+semantics (e.g., metacircular interpreters, big/small-step semantics)
 and continue by introducing ideas from lattice theory, abstract
 interpretation, and abstract-machine-based analysis techniques.
 
@@ -133,7 +133,7 @@ programming language semantics. The course included extensive coverage
 of small step semantics: for one project students implement an
 interpreter for a core-ML.
 
-Relevant lecture material I particular enjoyed writing includes:
+Relevant lecture material I particularly enjoyed writing includes:
 
 - [A set of lecture notes on introductory functional programming](https://github.com/kmicinski/cmsc330examples/tree/master/ocaml)
 

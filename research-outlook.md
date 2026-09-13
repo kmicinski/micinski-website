@@ -12,7 +12,7 @@ research, we will be working towards the following goal:
 
 > At the end of your year in collaboration with me, you will aim to
 > produce one conference-quality (or workshop-quality) paper, suitable
-> to be submitted to a competitive venune in CS.
+> to be submitted to a competitive venue in CS.
 
 Learning how to do research takes many years. Realistically, it is
 unlikely that all (or even most) senior theses will result in top

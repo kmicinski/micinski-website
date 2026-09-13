@@ -2,7 +2,7 @@
 layout: post
 title:  "Certifying Interpreters in Racket"
 date:   2022-08-14
-categories: dependent-types, functional-programming, theorem-proving
+categories: dependent-types functional-programming theorem-proving
 permalink: /certifying-interpreters
 ---
 

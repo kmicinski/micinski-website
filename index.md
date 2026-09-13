@@ -72,7 +72,7 @@ profile tracks my most up-to-date submissions.
       <h3>Systems</h3>
       <hr />
 
-      <p>A key part of our methodology is that we implement our techniques at the higest-possible scale (all of GitHub, production Android apps, stripped binaries). This often requires <a href="https://dl.acm.org/doi/10.1145/3502181.3531468">novel</a> systems-level innovation </p>
+      <p>A key part of our methodology is that we implement our techniques at the highest-possible scale (all of GitHub, production Android apps, stripped binaries). This often requires <a href="https://dl.acm.org/doi/10.1145/3502181.3531468">novel</a> systems-level innovation </p>
 
   </td>
   </tr>
@@ -83,7 +83,7 @@ profile tracks my most up-to-date submissions.
 
 - [NSF PPoSS Large: A Full-stack Approach to Declarative Analytics at Scale](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2316159&HistoricalAwards=false). National Science Foundation. Total: $1,000,037 (5 years)
 - [NSF PPoSS Planning: A Full-stack Approach to Declarative Analytics at Scale](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2217037&HistoricalAwards=false). National Science Foundation. Total: $83,761 (1 year)
-- [DARPA V-SPELLS: Verified Security and Performance Enhancement of Large Legacy Software](https://www.darpa.mil/news-events/2020-07-30). Defense Advance Research Projects Agency. Total: $400k (4 years)
+- [DARPA V-SPELLS: Verified Security and Performance Enhancement of Large Legacy Software](https://www.darpa.mil/news-events/2020-07-30). Defense Advanced Research Projects Agency. Total: $400k (4 years)
 - [Assemblage: Scaling Malware Analysis Pipelines](https://github.com/harp-lab/Assemblage). US Lab for Phys. Sciences. Total: $698k
 
 ## PhD Students
@@ -103,7 +103,7 @@ I regularly teach CIS352, an undergraduate programming languages class
 at Syracuse:
 
 - [Spring 2026](https://kmicinski.com/cis352-s26)
-- [Spring 2025](https://kmicinski.com/cis352-f25/)
+- [Spring 2025](https://kmicinski.com/cis352-s25/)
 - [Fall 2024](https://kmicinski.com/cis352-f24/)
 - [Spring 2024](https://kmicinski.com/cis352-s24/)
 - [Fall 2023](https://kmicinski.com/cis352-f23/)
@@ -114,7 +114,7 @@ at Syracuse:
 - [Spring 2020](http://kmicinski.com/cis352-s20/)
 
 Each fall I also teach a special topics seminar (CIS700 at Syracuse).
-During Fall 2023, I'm teaching a course on [formal methods and modern symbolic AI](https://kmicinski.com/cis700-f23).
+During Fall 2023, I taught a course on [formal methods and modern symbolic AI](https://kmicinski.com/cis700-f23).
 
 ## Undergraduate Research and Theses
 

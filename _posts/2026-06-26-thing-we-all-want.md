@@ -3,7 +3,7 @@ layout: post
 title:  "The Thing We All Obviously Want"
 date:   2026-06-26
 permalink: "/thing-we-all-want"
-categories: ai, programming
+categories: ai programming
 ---
 
 <figure class="post-figure">
