@@ -26,7 +26,7 @@ profile tracks my most up-to-date submissions.
 <table id="mainpgvenn">
   <tr id="areastr">
     <td width="50%">
-    <svg width="350" height="300" xmlns="http://www.w3.org/2000/svg">
+    <svg width="350" height="300" viewBox="0 0 350 300" xmlns="http://www.w3.org/2000/svg">
         <circle fill-opacity=".4" r="100" cx="100" cy="100" fill="red" 
             id="circle1" />
     <text font-weight="bold" xml:space="preserve" 
